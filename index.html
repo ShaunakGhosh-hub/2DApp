@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Carousel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="carousel-wrapper">
+    <div class="carousel-container">
+        <button class="left-arrow" onclick="slideLeft()">‹</button>
+        <div class="carousel">
+            <div class="image-container"></div>
+        </div>
+        <button class="right-arrow" onclick="slideRight()">›</button>
+    </div>
+
+    <div class="page-indicator">
+        <span id="page-counter">1/1</span>
+    </div>
+
+    
+</div>
+<button id="add-image" onclick="addImage()">ADD</button>
+<div class="fullscreen" id="fullscreen" style="display: none;">
+    <img id="fullscreen-img" />
+    <button class="close-btn" onclick="closeFullscreen()">✕</button>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
